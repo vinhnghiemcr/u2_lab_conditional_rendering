@@ -1,25 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles/App.css'
+import React, { Component } from 'react'
+import Form from './components/Form'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends Component {
+  constructor() {
+    super()
+    this.state = {
+      currentPage: 0,
+      name: '',
+      age: '',
+      email: ''
+    }
+  }
+
+  handleChange = (e) => {
+    this.setState({ [e.target.name]: e.target.value })
+  }
+
+  incrementPage = () => {
+    this.setState((prevState) => ({ currentPage: prevState.currentPage + 1 }))
+  }
+
+  resetForm = () => {
+    this.setState({ name: '', email: '', age: '' })
+  }
+
+  resetPage = () => {
+    this.setState({ currentPage: 0 })
+    this.resetForm()
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <Form
+          {...this.state}
+          incrementPage={this.incrementPage}
+          handleChange={this.handleChange}
+          resetPage={this.resetPage}
+        />
+      </div>
+    )
+  }
 }
-
-export default App;
