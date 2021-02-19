@@ -1,6 +1,6 @@
 # Conditional Rendering Lab
 
-![Matrix](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FgbGim1bTxkzf2%2Fgiphy.gif&f=1&nofb=1)
+![Bale](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FcQhWrl1CrGD04%2Fgiphy.gif&f=1&nofb=1)
 
 ## Overview
 In this lab, we'll be working with a provided sign-up form to conditionally render components based on the user's input.
