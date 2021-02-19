@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 export default class Info extends Component {
   render() {
     const { name, email, age, handleChange, incrementPage } = this.props
+
     return (
       <div className="info">
         <h1>Information Form</h1>
@@ -34,9 +35,8 @@ export default class Info extends Component {
           />
         </form><br></br>
         <div>
-          <button onClick={this.props.resetPage}>Back</button>
+          <button>Back</button>
           <button
-            disabled={age && name && email ? false : true}
             onClick={incrementPage}
           >
             Next

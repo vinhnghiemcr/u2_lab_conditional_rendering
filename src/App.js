@@ -21,15 +21,6 @@ export default class App extends Component {
     this.setState((prevState) => ({ currentPage: prevState.currentPage + 1 }))
   }
 
-  resetForm = () => {
-    this.setState({ name: '', email: '', age: '' })
-  }
-
-  resetPage = () => {
-    this.setState({ currentPage: 0 })
-    this.resetForm()
-  }
-
   render() {
     return (
       <div className="App">
@@ -37,7 +28,6 @@ export default class App extends Component {
           {...this.state}
           incrementPage={this.incrementPage}
           handleChange={this.handleChange}
-          resetPage={this.resetPage}
         />
       </div>
     )

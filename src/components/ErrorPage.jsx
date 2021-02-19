@@ -12,7 +12,7 @@ export default class ErrorPage extends Component {
         <main>
           <h1>Sorry!</h1>
           <p>You must be 18 or older to sign up for our site!</p>
-          <button onClick={this.props.resetPage}>Back</button>
+          <button>Back</button>
         </main>
       </div>
     )
