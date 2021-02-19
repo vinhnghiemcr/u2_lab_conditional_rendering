@@ -23,7 +23,7 @@ Using the provided components, create an environment where:
 - The ***majority*** of your work will be done in `Form.jsx`.
 
 ## Bonus
-- Configure the `Back` buttons to reset the state and return to the welcome page.
+- Configure the `Back` buttons to reset the state and return to the welcome page. Maybe a helper method in the `App` component could be useful?
 - Style it up! Remember to import your CSS file!
 
 ## Resources
