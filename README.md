@@ -19,12 +19,12 @@ Using the provided components, create an environment where:
 ## Notes/Tips
 - Take a look at what is already provided in the app. Using the state we have, how could we decide which components to render under certain conditions?
 - Consider the many conditional statements we've used throughout this course (if/else, switch, ternary). Which would be best for this situation?
-- The app **will not** render any components until you've called them in the `Form.jsx` render statement...
-- The **majority** of your work will be done in `Form.jsx`.
+- The app ***will not*** render any components until you've called them in the `Form.jsx` render statement...
+- The ***majority*** of your work will be done in `Form.jsx`.
 
 ## Bonus
-- Configure the `Back` buttons to reset the state and return to the welcome page
-- Style it up!
+- Configure the `Back` buttons to reset the state and return to the welcome page.
+- Style it up! Remember to import your CSS file!
 
 ## Resources
 - [Conditional Rendering](https://github.com/SEI-R-1-25/u2_lesson_react_conditional_rendering)
