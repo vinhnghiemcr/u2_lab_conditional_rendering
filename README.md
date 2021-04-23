@@ -27,5 +27,5 @@ Using the provided components, create an environment where:
 - Style it up! Remember to import your CSS file!
 
 ## Resources
-- [Conditional Rendering](https://github.com/SEI-R-1-25/u2_lesson_react_conditional_rendering)
+- [Conditional Rendering Lesson](https://github.com/SEI-R-4-26/u2_lesson_react_conditional_rendering)
 - [Disabled](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/disabled)
