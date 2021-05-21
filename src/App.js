@@ -15,6 +15,7 @@ export default class App extends Component {
 
   handleChange = (e) => {
     this.setState({ [e.target.name]: e.target.value })
+    // Uses bracket notation to access a key in state that is a match to the input's name and set's it to the inputs value
   }
 
   incrementPage = () => {
