@@ -21,6 +21,10 @@ Using the provided components, create an environment where:
 - Consider the many conditional statements we've used throughout this course (if/else, switch, ternary). Which would be best for this situation?
 - The app ***will not*** render any components until you've called them in the `Form.jsx` render statement...
 - The ***majority*** of your work will be done in `Form.jsx`.
+- Make sure to pass in a `name` and `value` attribute to your inputs like so:
+```jsx
+<input name="someKeyInState" value={this.props/state.someValue}/>
+```
 
 ## Bonus
 - Configure the `Back` buttons to reset the state and return to the welcome page. Maybe a helper method in the `App` component could be useful?
