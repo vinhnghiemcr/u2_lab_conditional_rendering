@@ -1,13 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class LandingPage extends Component {
-  render() {
-    return (
-      <div>
-        <h1>Welcome to Our Page!</h1>
-        <h4>Please sign up below...</h4>
-        <button onClick={this.props.incrementPage}>Sign Up</button>
-      </div>
-    )
-  }
+export default function LandingPage(props) {
+  return (
+    <div>
+      <h1>Welcome to Our Page!</h1>
+      <h4>Please sign up below...</h4>
+      <button onClick={props.incrementPage}>Sign Up</button>
+    </div>
+  )
 }

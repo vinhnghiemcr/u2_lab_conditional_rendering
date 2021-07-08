@@ -1,11 +1,6 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class Form extends Component {
-  render() {
-    const { currentPage, incrementPage, name, age, email, handleChange } = this.props
-
-    return (
-      <div></div>
-    )
-  }
+export default function Form(props) {
+  const { currentPage, incrementPage, name, age, email, handleChange } = props
+  return <div></div>
 }
