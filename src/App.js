@@ -1,36 +1,30 @@
 import './styles/App.css'
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 import Form from './components/Form'
 
-export default class App extends Component {
-  constructor() {
-    super()
-    this.state = {
-      currentPage: 0,
-      name: '',
-      age: '',
-      email: ''
-    }
-  }
+function App() {
+  const [currentPage, setCurrentPage] = useState(0)
+  const [formValues, setFormValues] = useState({ name: '', age: '', email: '' })
 
-  handleChange = (e) => {
-    this.setState({ [e.target.name]: e.target.value })
+  const handleChange = (e) => {
+    setFormValues({ ...formValues, [e.target.name]: e.target.value })
     // Uses bracket notation to access a key in state that is a match to the input's name and set's it to the inputs value
   }
 
-  incrementPage = () => {
-    this.setState((prevState) => ({ currentPage: prevState.currentPage + 1 }))
+  const incrementPage = () => {
+    setCurrentPage((prevState) => prevState + 1)
   }
 
-  render() {
-    return (
-      <div className="App">
-        <Form
-          {...this.state}
-          incrementPage={this.incrementPage}
-          handleChange={this.handleChange}
-        />
-      </div>
-    )
-  }
+  return (
+    <div className="App">
+      <Form
+        currentPage={currentPage}
+        formValues={formValues}
+        incrementPage={incrementPage}
+        handleChange={handleChange}
+      />
+    </div>
+  )
 }
+
+export default App
