@@ -19,7 +19,9 @@ function App() {
     <div className="App">
       <Form
         currentPage={currentPage}
-        formValues={formValues}
+        name={formValues.name}
+        age={formValues.age}
+        email={formValues.email}
         incrementPage={incrementPage}
         handleChange={handleChange}
       />
