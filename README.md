@@ -35,7 +35,7 @@ Using the provided components, create an environment where:
 ## Bonus
 
 - Configure the `Back` buttons to reset the state and return to the welcome page. Maybe a helper method in the `App` component could be useful?
-- Style it up! Remember to import your CSS file!
+- Style it up!
 
 ## Resources
 - [Disabled](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/disabled)

@@ -1,7 +1,4 @@
-import React from 'react'
-
-export default function Info(props) {
-  const { name, email, age, handleChange, incrementPage } = props
+const Info = (props) => {
 
   return (
     <div className="info">
@@ -13,8 +10,8 @@ export default function Info(props) {
           name="name"
           placeholder="Your
            Name"
-          value={name}
-          onChange={handleChange}
+          value={props.name}
+          onChange={props.handleChange}
         />
         <br></br>
         <br></br>
@@ -22,8 +19,8 @@ export default function Info(props) {
           type="text"
           name="email"
           placeholder="Your Email"
-          value={email}
-          onChange={handleChange}
+          value={props.email}
+          onChange={props.handleChange}
         />
         <br></br>
         <br></br>
@@ -31,15 +28,17 @@ export default function Info(props) {
           type="text"
           name="age"
           placeholder="Your Age"
-          value={age}
-          onChange={handleChange}
+          value={props.age}
+          onChange={props.handleChange}
         />
       </form>
       <br></br>
       <div>
         <button>Back</button>
-        <button onClick={incrementPage}>Next</button>
+        <button onClick={props.incrementPage}>Next</button>
       </div>
     </div>
   )
 }
+
+export default Info

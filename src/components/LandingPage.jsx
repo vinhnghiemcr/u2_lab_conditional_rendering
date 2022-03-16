@@ -1,6 +1,5 @@
-import React from 'react'
-
-export default function LandingPage(props) {
+const LandingPage = (props) => {
+  
   return (
     <div>
       <h1>Welcome to Our Page!</h1>
@@ -9,3 +8,5 @@ export default function LandingPage(props) {
     </div>
   )
 }
+
+export default LandingPage

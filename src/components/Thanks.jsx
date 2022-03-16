@@ -1,6 +1,5 @@
-import React from 'react'
-
-export default function Thanks() {
+const Thanks = () => {
+  
   return (
     <div>
       <br></br>
@@ -14,3 +13,5 @@ export default function Thanks() {
     </div>
   )
 }
+
+export default Thanks

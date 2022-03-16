@@ -1,8 +1,8 @@
 import './styles/App.css'
-import React, { useState } from 'react'
+import { useState } from 'react'
 import Form from './components/Form'
 
-function App() {
+const App = () => {
   const [currentPage, setCurrentPage] = useState(0)
   const [formValues, setFormValues] = useState({ name: '', age: '', email: '' })
 

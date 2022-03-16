@@ -1,7 +1,5 @@
-import React from 'react'
-import '../styles/App.css'
+const ErrorPage = () => {
 
-export default function ErrorPage(){
   return (
     <div>
       <img
@@ -16,3 +14,5 @@ export default function ErrorPage(){
     </div>
   )
 }
+
+export default ErrorPage

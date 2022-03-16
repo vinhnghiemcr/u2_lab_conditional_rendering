@@ -1,6 +1,6 @@
-import React from 'react'
+const Form = (props) => {
 
-export default function Form(props) {
-  const { currentPage, incrementPage, name, age, email, handleChange } = props
   return <div></div>
 }
+
+export default Form
