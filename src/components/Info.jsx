@@ -34,8 +34,8 @@ const Info = (props) => {
       </form>
       <br></br>
       <div>
-        <button>Back</button>
-        <button onClick={props.incrementPage}>Next</button>
+        <button onClick={props.setPageToHomepage}>Back</button>
+        <button onClick={props.incrementPage} disabled={props.name && props.email && props.age ? false : true}>Next</button>
       </div>
     </div>
   )

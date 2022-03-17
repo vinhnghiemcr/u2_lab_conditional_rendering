@@ -1,6 +1,7 @@
 import './styles/App.css'
-import { useState } from 'react'
+import React,{ useState } from 'react'
 import Form from './components/Form'
+
 
 const App = () => {
   const [currentPage, setCurrentPage] = useState(0)
@@ -14,6 +15,9 @@ const App = () => {
   const incrementPage = () => {
     setCurrentPage((prevState) => prevState + 1)
   }
+  const setPageToHomepage = () => {
+    setCurrentPage(0)
+  }
 
   return (
     <div className="App">
@@ -24,6 +28,7 @@ const App = () => {
         email={formValues.email}
         incrementPage={incrementPage}
         handleChange={handleChange}
+        setPageToHomepage={setPageToHomepage}
       />
     </div>
   )
